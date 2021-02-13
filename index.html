@@ -1,0 +1,28 @@
+<!-- Файл HTML для вмісту та структури сторінки-->
+<!--Файл CSS призначений для презентації та стилізації. Вказуєш як повинна виглядати сторінка-->
+<!--Файл JavaScript призначений для поведінки та інтерактивності-->
+<!-- Мета-елементи або теги надають описову інформацію про веб-сторінку. Наприклад, вони допомагають пошуковим системам відображати результати.-->
+<!--UTF-8 (Набір символів) щоб все нормально виводилось-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple website</title>
+    <link rel="stylesheet" href="main.css"> <!--посилання на зовнішній файл CSS із HTML-->
+</head>
+<body class="light-theme">
+    <h1>Task List</h1>
+    <p id="msg">Current tasks:</p> <!--атрибут id може бути використаний для стилізації одного елемента-->
+    <ul>
+        <!--Кожен елемент <li>елемента списку згрупований у невпорядкований список <ul>.-->
+        <li class="list">Add visual styles</li> <!--атрибут class призначений для стилювання всіх елементів одного класу-->
+        <li class="list">Add light and dark themes</li>
+        <li>Enable switching the theme</li>
+    </ul>  
+    <button class="btn">Dark</button> 
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site</noscript> <!--Якщо не працює JS то виводиться це повідомлення-->
+</body>
+</html>
+
+

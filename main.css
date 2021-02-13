@@ -1,0 +1,55 @@
+body {
+    background: var(--bg);
+}
+
+ul {
+    font-family /*назва властивості*/: helvetica /*значення*/; /*визначає який повинен бути стиль*/
+    /*Властивість і значення разом складають пару ключ-значення*/
+} /*селектор*/
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: var(--green); /*var використовується як значення властивостей*/
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--green);
+}
+
+:root {
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.dark-theme {
+    --bg: var(--black); /*колір бекграунда*/
+    --fontColor: var(--green); /*колір шрифту*/
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+* {
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus { outline-style: none;} /*усуває прямокутний контур, коли вибрано кнопку*/
